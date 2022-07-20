@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.checkbox {
+  margin-block-end: 3px;
+  display: inline-block;
+  margin-right: 15%;
+  color: white;
+  margin-left: 2%;
+}
+
+.checkbox1 {
+  width: 20px;
+  height: 20px;
+}
+
+.titulo {
+  padding-right: 4%;
+  display: inline-block;
+}
+
+.descripcion {
+  padding-right: 15%;
+  display: inline-block;
+}
+
+.titulo1 {
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.descripcion1 {
+  padding-right: 150%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.boton {
+  background: #111;
+  color: white;
+  width: 400%;
+  height: 30px;
+}
+
+.boton1 {
+  display: inline-block;
+}

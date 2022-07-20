@@ -3,60 +3,39 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Fragment, useEffect, useRef, useState } from "react";
 
-class Titulo extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-  }
-
-  render() {
-    return(
-      <div>{this.props.title}</div>
-    )
-  }
-
-}
-
-class Form extends React.Component {
-
-  render() {
-    return(
+function Main() {
+  const tituloRef = useRef();
+  const descripcionRef = useRef();
+    return (
       <div>
-        <input type={'text'} className="" />
-        <input type={'text'} className="" />
-        <input type={'checkbox'} />
-        <button>Agregar</button>
+
+        <div className='titulo'>
+          <input type={'text'} className="titulo1" placeholder='Título' ref={tituloRef}/>
+        </div>
+
+        <div className='descripcion'>
+          <input type={'text'} className="descripcion1" placeholder='Descripción' ref={descripcionRef}/>
+        </div>
+
+        <div className='checkbox'>
+          <input type={'checkbox'} className="checkbox1" id='text' />
+          <label for="text">Importante!</label>
+        </div>
+
+        <div className='boton1'>
+          <button className='boton'>AGREGAR</button>
+        </div>
       </div>
     )
-  }
-
-}
-
-class Notas extends React.Component {
-
-
-
-}
-
-class Main extends React.Component {
-
-  render() {
-    return(
-      <div className=''>
-        <Titulo title="Post It Simulator!" />
-        <Form />
-      </div>
-    )
-  }
 
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Main/>
+    <Main />
   </React.StrictMode>
 );
 
